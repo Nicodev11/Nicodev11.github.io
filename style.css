@@ -120,21 +120,21 @@ body {
   width: 200px;
 }
 
-@media screen and (max-width : 750px) {
+@media screen and (max-width: 750px) {
   .row {
     height: 560px;
   }
   .score > p {
     font-size: 70px;
-}
-#dice {
-  width: 150px;
-  top : -120px
-}
-.container-player p {
-  font-size: 30px;
-}
-.game-choice {
-  bottom: 60px;
-}
+  }
+  #dice {
+    width: 150px;
+    top: -120px;
+  }
+  .container-player p {
+    font-size: 30px;
+  }
+  .game-choice {
+    bottom: 60px;
+  }
 }
