@@ -138,3 +138,35 @@ body {
     bottom: 60px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .row {
+    height: 500px;
+  }
+  .new-game {
+    margin-top: 0;
+  }
+  .score > p {
+    font-size: 50px;
+  }
+  #dice {
+    width: 120px;
+    top: -100px;
+  }
+  .container-player > p  {
+    font-size: 20px;
+  }
+
+  .game-choice {
+    bottom: 60px;
+  }
+  .current {
+    width: 100px;
+    margin: 125px auto;
+    padding: 0;
+}
+.player > span {
+  width: 15px;
+  height: 15px;
+}
+}

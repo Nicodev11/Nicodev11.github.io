@@ -45,14 +45,12 @@ function resultScoreGlobalPlayer2() {
 function finishPlayer1() {
   if (countScorePlayer1 >= 100) {
     document.querySelector(".victory").innerHTML = 'LE JOUEUR 1 GAGNE LA PARTIE'
-    rollDicePlayer1.removeEventListener('click')
-    rollDicePlayer2.removeEventListener('click')
   }
 }
 
 function finishPlayer2() {
   if (countScorePlayer2 >= 100) {
-    alert('Player 2 à gagné la partie')
+    document.querySelector(".victory").innerHTML = 'LE JOUEUR 2 GAGNE LA PARTIE'
   }
 }
 
