@@ -1,0 +1,120 @@
+body {
+  width: 1024px;
+  background: rgba(189, 91, 0, 0.616);
+  font-family: 'Lato', sans-serif;
+  margin: auto;
+}
+
+.row {
+  margin: 20px;
+  display: flex;
+  margin-top: 20vh;
+}
+
+.left-col-item {
+  min-height: 60vh;
+  background: rgb(250, 250, 250);
+}
+
+.right-col-item {
+  min-height: 60vh;
+  background-color: white;
+}
+
+.new-game {
+  margin-top: 20px;
+}
+
+.bi {
+  color: red;
+  font-size: 25px;
+}
+.new-game > p {
+  font-size: 20px;
+  margin: auto 10px;
+}
+
+.container-player {
+  margin-top: 30% ;
+}
+
+.score > p {
+  font-size: 90px;
+  font-weight: 100;
+  color: red;
+}
+
+.container-player p {
+  margin: auto;
+  text-align: center;
+  font-size: 40px;
+  margin: auto 10px;
+  font-weight: 300;
+}
+
+.current {
+  width: 150px;
+  margin: 100px auto;
+  text-align: center;
+  background: rgba(255, 0, 0, 0.63);
+  padding: 10px;
+}
+
+.current > span {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.game-choice {
+  bottom: 105px;
+}
+.game-choice  p {
+  font-size: 20px;
+  margin: auto 10px;
+}
+
+.roll-dice:hover {
+  cursor: pointer;
+}
+.hold-player2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+}
+.roll-dice-player2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+}
+.hold:hover, .new-game:hover {
+  cursor: pointer;
+}
+
+#dice {
+  position: absolute;
+  width: 200px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.player > span {
+  width: 25px;
+  height: 25px;
+  background: red;
+  border-radius: 50px;
+  margin: auto 0;
+  visibility: hidden;
+}
+
+.player1 > span {
+  visibility: visible;
+}
+.btn-rules {
+  width: 200px;
+}
