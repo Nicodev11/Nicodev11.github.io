@@ -79,14 +79,7 @@ function passRoundPlayer2() {
 }
 
 rollDicePlayer1.addEventListener("click", (e) => {
-  let valueDice = MarollDicePlayer2.style.visibility = "hidden";
-  rollDicePlayer1.style.visibility = "visible";
-  holdPlayer2.style.visibility = "hidden";
-  holdPlayer1.style.visibility = "visible";
-  currentPlayer2.innerHTML = "0";
-  countCurrentPlayer2 = [];
-  redPointPlayer2.style.visibility = "hidden";
-  redPointPlayer1.style.visibility = "visible";th.floor(Math.random() * 6) + 1;
+  let valueDice = Math.floor(Math.random() * 6) + 1;
   document
     .getElementById("dice")
     .setAttribute("src", "./img/dice" + valueDice + ".png");
