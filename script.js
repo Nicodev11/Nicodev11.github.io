@@ -43,14 +43,14 @@ function resultScoreGlobalPlayer2() {
   return total;
 }
 function finishPlayer1() {
-  if (countScorePlayer1 >= 100) {
+  if (resultScoreGlobalPlayer1() >= 100) {
     document.querySelector(".victory").innerHTML =
       "LE JOUEUR 1 GAGNE LA PARTIE";
   }
 }
 
 function finishPlayer2() {
-  if (countScorePlayer2 >= 100) {
+  if (resultScoreGlobalPlayer2() >= 100) {
     document.querySelector(".victory").innerHTML =
       "LE JOUEUR 2 GAGNE LA PARTIE";
   }
@@ -88,8 +88,6 @@ rollDicePlayer1.addEventListener("click", (e) => {
   if (valueDice >= 2) {
     currentPlayer1.innerHTML = resultScorePlayer1();
   } else {
-    countScorePlayer1 = [];
-    scorePlayer1.innerHTML = "00";
     passRoundPlayer1()
   }
 });
@@ -113,8 +111,6 @@ rollDicePlayer2.addEventListener("click", (e) => {
     resultScorePlayer2();
     currentPlayer2.innerHTML = scoreGlobalPlayer2;
   } else {
-    countScorePlayer2 = [];
-    scorePlayer2.innerHTML = "00";
     passRoundPlayer2()
   }
 });
