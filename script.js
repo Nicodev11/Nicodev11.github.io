@@ -42,10 +42,17 @@ function resultScoreGlobalPlayer2() {
   }
   return total;
 }
+function buttonHidden() {
+  holdPlayer1.style.visibility = 'hidden'
+  holdPlayer2.style.visibility = 'hidden'
+  rollDicePlayer1.style.visibility = 'hidden'
+  rollDicePlayer2.style.visibility = 'hidden'
+}
 function finishPlayer1() {
   if (resultScoreGlobalPlayer1() >= 100) {
     document.querySelector(".victory").innerHTML =
       "LE JOUEUR 1 GAGNE LA PARTIE";
+    buttonHidden()
   }
 }
 
@@ -53,6 +60,7 @@ function finishPlayer2() {
   if (resultScoreGlobalPlayer2() >= 100) {
     document.querySelector(".victory").innerHTML =
       "LE JOUEUR 2 GAGNE LA PARTIE";
+    buttonHidden()
   }
 }
 
